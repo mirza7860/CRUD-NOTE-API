@@ -14,11 +14,11 @@ const router = express.Router();
 
 // GET get a list of all notes for the authenticated user.
 
-router.get("/", getAllNotes);
+router.get("/", AUTHENTICATE_USER, getAllNotes);
 
 // GET get a note by ID for the authenticated user.
 
-router.get("/:userId", getUserNotes);
+router.get("/:userId", AUTHENTICATE_USER, getUserNotes);
 
 // POST create a new note for the authenticated user.
 
