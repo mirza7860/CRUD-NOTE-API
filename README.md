@@ -9,16 +9,20 @@ Developed a complete end to end backend note api with crud operations .
 
 ## Getting Started
 
-### Prerequisites
+### Technology Used
 
 - Node.js
 - npm
-
+- Express.js
+- MongoDB
+- Mongoose
+- Postman
+  
 ### Installation
 
 1. Clone the repository.
 2. Install dependencies with `npm install`.
-3. Start the server with `npm start`.
+3. Start the server with `node index.js`.
 
 ## Usage
 
@@ -27,16 +31,17 @@ The project provides RESTful APIs for user authentication and note management.
 ### API Endpoints
 
 - **User Authentication:**
-  - POST /api/v1/user/login
-  - POST /api/v1/user/logout
-  - POST /api/v1/user/register
+  - POST /api/auth/login
+  - POST /api/auth/logout
+  - POST /api/auth/register
 
 - **Note Management:**
-  - POST /api/v1/app/notes (Create Note)
-  - GET /api/v1/app/notes (Get All Notes)
-  - GET /api/v1/app/notes/:userId (Get User Notes)
-  - PATCH /api/v1/app/notes/:noteId (Update Note)
-  - DELETE /api/v1/app/notes/:noteId (Delete Note)
+  - POST /api/notes (Create Note)
+  - GET /api/notes (Get All Notes)
+  - GET /api/notes/:userId (Get User Notes)
+  - PATCH /api/notes/:noteId (Update Note)
+  - DELETE /api/notes/:noteId (Delete Note)
+  - POST /api/notes/:id/share (share note)
 
 ## Contributing
 
