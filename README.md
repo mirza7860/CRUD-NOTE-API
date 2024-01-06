@@ -42,7 +42,7 @@ The project provides RESTful APIs for user authentication and note management.
   - PATCH /api/notes/:noteId (Update Note)
   - DELETE /api/notes/:noteId (Delete Note)
   - POST /api/notes/:id/share (share note)
-
+  - GET /api/search (   search for notes based on keywords for the authenticated user .  )
 ## Contributing
 
 Feel free to contribute by submitting bug reports, feature requests, or pull requests.
